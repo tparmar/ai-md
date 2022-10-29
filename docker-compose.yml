@@ -1,0 +1,12 @@
+version: '3.8'
+
+services:
+    flask-rest-api:
+        build: ./flask-rest-api
+        ports: 
+            - 5000:5000
+
+    vue-app:
+        build: ./ai-md-site
+        ports: 
+            - 8080:5000
